@@ -10,11 +10,28 @@
     rel="stylesheet">
   <link rel="stylesheet" href="glider.min.css">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Figma To HTML</title>
 </head>
 
 <body>
   <div class="wrapper">
+
+    <div class="mobile-nav">
+      <ul class="menu-items">
+        <li>
+          <a href="#about" class="active">About</a>
+        </li>
+        <li>
+          <a href="#projects">Our Projects</a>
+        </li>
+        <li>
+          <a href="#testimonial">Testimonials</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
 
     <nav class="desktop-nav">
       <div class="logo">
@@ -22,18 +39,21 @@
           <img src="images/Logo.svg" alt="">
         </a>
       </div>
+      <div class="menu-icon">
+        <img src="images/menu.svg" alt="">
+      </div>
       <ul class="menu-items">
         <li>
-          <a href="#" class="active">About</a>
+          <a href="#about" class="active">About</a>
         </li>
         <li>
-          <a href="#">Our Projects</a>
+          <a href="#projects">Our Projects</a>
         </li>
         <li>
-          <a href="#">Testimonials</a>
+          <a href="#testimonial">Testimonials</a>
         </li>
         <li>
-          <a href="#">Contect</a>
+          <a href="#contact">Contact</a>
         </li>
         <li>
           <a href="#" class='btn'>Get Started</a>
@@ -66,17 +86,21 @@
     <div class="brands-section">
       <h2>Our Clients</h2>
       <div class="brands-container">
-        <img src="images/logo_microsoft.png" alt="">
-        <img src="images/logo_google.png" alt="">
-        <img src="images/logo_netflix.png" alt="">
-        <img src="images/logo_unity.png" alt="">
-        <img src="images/logo_amazon.png" alt="">
+        <div class="brands-line-1">
+          <img src="images/logo_microsoft.png" alt="">
+          <img src="images/logo_google.png" alt="">
+          <img src="images/logo_netflix.png" alt="">
+        </div>
+        <div class="brands-line-2">
+          <img src="images/logo_unity.png" alt="">
+          <img src="images/logo_amazon.png" alt="">
+        </div>
       </div>
     </div>
 
     <!-- End of Brand Section -->
 
-    <section class="about-section">
+    <section id="about" class="about-section">
       <h2>About Us</h2>
       <div class="section-content">
         <div class="about-description">
@@ -94,15 +118,15 @@
 
     <!-- End of About Us Section -->
 
-    <section class="project-section">
+    <section id='projects' class="project-section">
       <h2>Our Projects</h2>
       <div class="projects-gallery">
         <img src="images/Rectangle 15.png" alt="">
         <img src="images/Rectangle 16.png" alt="">
         <img src="images/Rectangle 17.png" alt="">
         <img src="images/Rectangle 18.png" alt="">
-        <img src="images/Rectangle 19.png" alt="">
-        <img src="images/Rectangle 20.png" alt="">
+        <img class='hide' src="images/Rectangle 19.png" alt="">
+        <img class='hide' src="images/Rectangle 20.png" alt="">
       </div>
       <a href="#" class='btn cyan'>View All</a>
     </section>
@@ -111,7 +135,7 @@
 
   </div>
 
-  <section class="testimonials-section">
+  <section id="testimonial" class="testimonials-section">
     <div class="wrapper">
       <h2>Testimonials</h2>
       <div class="testimonials-container">
@@ -183,6 +207,66 @@
   </section>
 
   <!-- End of Testimonials Section -->
+
+  <div class="wrapper">
+    <section id="contact" class="contact-section">
+      <h2>Contect Us</h2>
+      <form action="#">
+        <div class="group">
+          <input type="text" placeholder="Name">
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="group">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        </div>
+        <a href="#" class='btn cyan'>Send Message</a>
+      </form>
+    </section>
+  </div>
+
+  <!-- End of Contact Section -->
+
+  <footer>
+    <div class='wrapper'>
+      <div class="footer-container">
+        <div class="logo">
+          <img src="images/Logo_light.svg" alt="">
+        </div>
+        <div class="footer-nav">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="#">Mobile Development</a></li>
+            <li><a href="#">Web App Development</a></li>
+            <li><a href="#">Theme Development</a></li>
+            <li><a href="#">SEO</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">GT Web Design</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h3>Get Social</h3>
+          <div class="footer-social">
+            <a href="#"><img src="images/Facebook Icon.png" alt=""></a>
+            <a href="#"><img src="images/Instagram Icon.png" alt=""></a>
+            <a href="#"><img src="images/Twitter Icon.png" alt=""></a>
+          </div>
+          <p>info@gtcoding.net</p>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">
+      This website was designed by Godson T. &copy; 2021
+    </p>
+  </footer>
+
+  <!-- End of Footer -->
 
   <script src="glider.min.js"></script>
 
